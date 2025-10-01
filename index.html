@@ -1,27 +1,74 @@
-🔔 Product Update: Lightweight Invoice Flow 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>[Official Update] Lightweight Invoice Flow (Demo)</title>
+<meta name="description" content="Official update: Lightweight Invoice Flow demo from OTP to Share & Archive with accounting sync." />
+<style>
+  :root{
+    --bg:#f7f7fb; --card:#fff; --text:#111; --muted:#666;
+    --border:#e9e9ef; --brand:#1466f1; --ok:#0a6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+  .wrap{max-width:900px;margin:0 auto;padding:28px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 6px 24px rgba(13,38,76,.06);padding:22px}
+  .tag{display:inline-block;font-weight:700;font-size:.85rem;color:#fff;background:#111;border-radius:999px;padding:6px 10px;margin-bottom:10px}
+  .title{font-size:1.6rem;margin:.2rem 0 .6rem}
+  .subtitle{color:var(--muted);margin:0 0 1rem}
+  .section h3{margin:1.1rem 0 .4rem}
+  ul{margin:.4rem 0 1rem 1.25rem}
+  li{margin:.25rem 0}
+  .cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:12px 16px;margin-top:10px}
+  .cta:focus,.cta:hover{opacity:.92}
+  .link{color:var(--brand);text-decoration:underline;word-break:break-all}
+  .note{color:var(--muted);font-size:.95rem;margin-top:12px}
+  .ok{color:var(--ok);font-weight:700}
+  .hr{height:1px;background:var(--border);margin:16px 0}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card" aria-labelledby="release-title">
+      <span class="tag" aria-label="Official update">Official Update</span>
+      <h1 id="release-title" class="title">Lightweight Invoice Flow (Demo)</h1>
+      <p class="subtitle">A streamlined demo covering the full cycle from manual OTP to <em>Share &amp; Archive</em>, built to test human-in-the-loop + agent handoff.</p>
 
-We’ve released a new lightweight invoice flow demo page designed to simplify the full cycle from OTP verification to archiving.
+      <div class="section">
+        <h3>What’s new</h3>
+        <ul>
+          <li><strong>Manual OTP Verification</strong>: One-time code required to start the flow.</li>
+          <li><strong>Preview Invoice</strong>: Inline “<span class="ok">Invoice Draft</span>” preview for quick review.</li>
+          <li><strong>Download Invoice</strong>: Save a local copy (demo uses .txt; real-world is typically PDF).</li>
+          <li><strong>Share &amp; Archive</strong>: Close the loop with practical options:
+            <ul>
+              <li><strong>Sync to accounting systems</strong> (Xero / QuickBooks)</li>
+              <li><strong>Email to customer</strong> (deliver the invoice PDF)</li>
+              <li><strong>Archive to cloud</strong> (Google Drive / Dropbox)</li>
+              <li><strong>Generate reimbursement summary</strong> (one-page overview)</li>
+              <li><strong>Update contact details</strong> (store userId &amp; invoice header)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-What’s new:
+      <div class="section">
+        <h3>Try the demo</h3>
+        <p>
+          <a class="cta" href="https://example.com/your-demo" target="_blank" rel="noopener">Open Demo</a>
+        </p>
+        <p class="note">
+          Or copy the link: <a class="link" href="https://example.com/your-demo" target="_blank" rel="noopener">https://example.com/your-demo</a>
+        </p>
+      </div>
 
-Manual OTP Verification: One-time code required to start the process.
+      <div class="hr" role="separator" aria-hidden="true"></div>
 
-Preview Invoice: Inline display of an “Invoice Draft” for quick review.
-
-Download Invoice: Save a local copy (demo: .txt; real-world: PDF).
-
-Share & Archive: Flexible options to close the loop:
-
-Sync to accounting systems (Xero / QuickBooks)
-
-Email to customer (PDF delivery)
-
-Archive to cloud (Google Drive / Dropbox)
-
-Generate reimbursement summary (one-page overview)
-
-Update contact details (store userId & invoice header)
-
-👉 Try the demo here: {{LINK}}
-
-We’d love to hear your feedback—especially on whether the final “Share & Archive” step feels natural after download.
+      <p class="note">
+        Feedback is welcome—especially on whether the final <em>Share &amp; Archive</em> step feels natural to complete after download.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
